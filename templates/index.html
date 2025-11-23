@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spelling Star</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Spelling Star</div>
+    <div class="status">
+      <span id="set-name">Set</span>
+      <span id="word-counter">0 / 0</span>
+      <span id="stars">⭐ 0</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="word-panel">
+      <div id="prompt-label" class="prompt">Copy this word</div>
+      <div id="current-word" class="word">...</div>
+      <button id="show-word" class="ghost-btn">Show word</button>
+    </section>
+
+    <section class="canvas-panel">
+      <canvas id="pad" aria-label="Handwriting area"></canvas>
+    </section>
+
+    <section class="controls">
+      <button id="clear-btn" class="primary">Clear</button>
+      <button id="correct-btn" class="success">Correct</button>
+      <button id="try-again-btn" class="warn">Try again</button>
+      <button id="next-btn" class="primary">Next word</button>
+    </section>
+  </main>
+
+  <div id="reward-layer" class="reward-layer" hidden></div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
